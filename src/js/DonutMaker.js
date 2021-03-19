@@ -9,7 +9,7 @@ function clickEvent() {
     if(donutMultiplierCount===0) {
         donutCount = donutCount +1;
     }else {
-        donutCount = 1.2*donutMultiplierCount + donutCount;
+        donutCount = (1.2**donutMultiplierCount) + donutCount;
     }
 }
 function retrieveDonutCount() {
