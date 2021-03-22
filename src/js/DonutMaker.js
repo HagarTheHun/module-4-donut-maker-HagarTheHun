@@ -7,7 +7,7 @@ let donutMultiplierCost = 10;
 
 function clickEvent() {
     if(donutMultiplierCount===0) {
-        donutCount = donutCount +1;
+        donutCount = donutCount ++;
     }else {
         donutCount = (1.2**donutMultiplierCount) + donutCount;
     }
@@ -31,7 +31,7 @@ function retrieveAutoClickerCount() {
 
 function automatedClick(){
     // donutCount = donutCount + autoClickerCount;
-    for (i=autoClickerCount, i>0, i--) {
+    for (i=autoClickerCount; i>0; i--) {
         clickEvent();
     }
 }
