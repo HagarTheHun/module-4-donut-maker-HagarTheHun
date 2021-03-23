@@ -78,6 +78,7 @@ function increaseDonutMultiplierCount() {
     doughnutMultiplierNumber.innerText = donutMultiplierCount;
     doughnutMultiplierPrice.innerText = Math.round(donutMultiplierCost);
     actualDoughnutClick.innerText = 1.2**donutMultiplierCount;
+    doughnutNumber.innerText = Math.round(donutCount);
 
     } else {
         alert("You don't have enough doughnuts for that, keep clicking!");
