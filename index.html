@@ -10,16 +10,48 @@
         <div class="anchor"></div>
         <header>
             <nav>
-                <ul>
-                    <li><a href="FtBBC.html">Fred the Baker Baking Company</a></li>
-                    <li><a href="CookieClicker.html">My insperation</a></li>
-                    <li><a href="ContactMe.html">Contact the Developer</a></li>
-                </ul>
+                <button type="button" class="collapsibleNavBar">About</button>
+                    <div class="content">
+                        <p>Fred the Baker Baking Company has been making hot, fresh donuts for the last 60 years. Fred has a secret donut recipe that he created with a French chef and began selling his Baking Company Donuts from the front of the shop. Fred has decided he is ready to retire and wants his love of donuts to stay alive as users experience the Donut Maker.</p>
+                    </div>
+                <button type="button" class="collapsibleNavBar">Inspiration</button>
+                    <div class="content">
+                        <p>Donut Maker was inspired by the game, <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">Cookie Clicker</a>. Cookie Clicker is a Javascript game that was released by Orteil in 2013. The goal of the game is to make cookies by clicking on the cookie. Once you earn enough cookies, you can buy upgrades to help you make cookies faster. Cookie Clicker allows the user to have gameplay experience that appears to be endless. </p>
+                    </div>
+                <button type="button" class="collapsibleNavBar">Contact</button>
+                    <div class="content">
+                        <p>Connor Chambers: Software Developer
+                            <ul>
+                                <li><a href="#" target="_blank">GitHub</a></li>
+                                <li><a href="#" target="_blank">LinkedIn</a>
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
             </nav>
         </header>
-        <button type="button">Click For Donuts</button>
+        <section>
+            <button type="button" class="doughnut__button" id="doughnut__button">Click For <span class="actual__Doughnut__Click">1</span> Donuts</button>
+            <h3><span class="doughnut__count">0</span> Doughnuts</h3>
+        </section>
+        <section>
+            <button type="button" class="autoclicker__button" id="autoclicker__button">Buy an Autoclicker</button>
+            <h4>The next Auto Clicker costs <span class="autoclicker__price">100</span> doughnuts.</h4>
+            <h3><span class="autoclicker__count">0</span> Autoclickers</h3>
+        </section>
+        <section>
+            <button type="button" class="doughnutMultiplier__button" id="doughnutMultiplier__button">Buy an Donut Multiplier</button>
+            <h4>The next Donut Multiplier costs <span class="doughnutMultiplyer__price">10</span> donuts!</h4>
+            <h3><span class="doughnutMultiplier__count">0</span> Donut Multipliers</h3>
+
+        </section>
+        <section>
+            <h3>Want to try again? Click below.</h3>
+            <button class="reload__button" id="reload__button">Start Over</button>
+        </section>
 
     </div>
     <script src="/src/app.js"></script>
+    <script src="/src/js/DonutMaker.js"></script>
 </body>
 </html>
